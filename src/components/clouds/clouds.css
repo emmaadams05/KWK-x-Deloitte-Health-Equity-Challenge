@@ -1,0 +1,56 @@
+/* Prevent cloud from showing on the outer edges of the display */
+body {
+  overflow-x: hidden !important;
+}
+
+
+/* cloud css code for desktop/laptop */
+.cloud {
+  display: block; 
+  position: absolute;
+  z-index: -1;
+}
+
+.cloud1 {
+  top: 7rem;
+  right: -13rem;
+  height: 20rem;
+}
+
+.cloud2 {
+  height: 25rem;
+  top: 24rem;
+  left: -16rem;
+}
+
+
+/* cloud css code for smaller computers */
+@media (max-width: 1211px) {
+
+  .cloud1 {
+    height: 18rem;
+  }
+
+  .cloud2 {
+    height: 18rem;
+  }
+
+}
+
+/* cloud css code for even smaller computers */
+@media (max-width: 1000px) {
+  .cloud1 {
+    height: 15rem;
+  }
+
+  .cloud2 {
+    height: 16rem;
+  }
+}
+
+/* hide clouds when user is on phone/tablet device */
+@media (max-width: 780px) {
+  .cloud{
+    display: none;
+  }
+}

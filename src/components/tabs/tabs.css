@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* VARIABLES FOR COLOR AND FONT */
+html {
+  --white: #ffffff;
+  --background: #172036;
+  --gold: #E2D907;
+  --dark-navy: #0d1529;
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Jost", sans-serif;
+}
+
+/* Styles for the tabs! */
+.tabs-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+  width: 7rem;
+}
+
+#green {
+  background-color: #0b8c23;
+  border-radius: 10px 0 0 0;
+}
+#yellow {
+  background-color: #abab29;
+}
+#orange {
+  background-color: #db8216;
+}
+#red {
+  background-color: #b02813;
+}
+#purple {
+  background-color: #70127a;
+  border-radius: 0 10px 0 0;
+}
+
+/* Tabs Become darker shades when hovered on  */
+#green:hover {
+  background-color: #09671a;
+  border-radius: 10px 0 0 0;
+}
+#yellow:hover {
+  background-color: #878722;
+}
+#orange:hover {
+  background-color: #c47412;
+}
+#red:hover {
+  background-color: #942110;
+}
+#purple:hover {
+  background-color: #500f57;
+}
+
+.green {
+  color: #0b8c23;
+}
+.yellow {
+  color: #abab29;
+}
+.orange {
+  color: #db8216;
+}
+.red {
+  color: #b02813;
+}
+.purple {
+  color: #70127a;
+}
+
+/* Styling for the information in the tabs themselves. */
+
+.tab-background {
+  background-color: var(--white);
+  height: 20rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-container {
+  width: 35rem;
+}
+
+.tab-background p {
+  color: var(--dark-navy);
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  text-align: left;
+  padding-left: 2rem;
+  line-height: 35px;
+  padding-right: 2rem;
+}
+
+.tab-background h5 {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  font-weight: bold;
+  color: var(--dark-navy)
+}
+
+
+/* Mobile/small screen CSS adjustments */
+@media (max-width: 800px) {
+
+  .tabs button {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    width: 4rem;
+    font-size: 0.5rem;
+  }
+
+  .card-container {
+    width: 20rem;
+    margin: auto;
+
+  }
+
+  .tab-background p {
+    line-height: 20px;
+    padding-right: 2rem;
+  }
+
+  
+}

@@ -1,0 +1,70 @@
+/* relevant imports */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* default settings for css */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* VARIABLES FOR COLOR AND FONT (note: use HTML instead of :root b/c React) */
+html {
+  --white: #ffffff;
+  --background: #172036;
+  --gold: #E2D907;
+  --dark-navy: #0d1529;
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Jost", sans-serif;
+}
+
+
+/* Section Header Text Styling ----------------- */
+
+.stay-safe-title h3 {
+  font-size: 2.4rem;
+  font-family: var(--header-font);
+  font-weight: normal;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.stay-safe-title h3 {
+  color: var(--white);
+  margin-bottom: 1.2rem;
+}
+
+.stay-safe-title p {
+  color: var(--white);
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+}
+
+.stay-safe-title {
+  text-align: center;
+  margin-top: 12rem;
+}
+
+
+/* Iframe and map style rules */
+iframe {
+  width: 40rem;
+  height: 30rem;
+  margin-bottom: 3rem;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3.4rem;
+}

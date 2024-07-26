@@ -1,0 +1,264 @@
+/* relevant imports */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* default settings for css */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* VARIABLES FOR COLOR AND FONT (note: use HTML instead of :root b/c React) */
+html {
+  --white: #ffffff;
+  --background: #172036;
+  --gold: #E2D907;
+  --dark-navy: #0d1529;
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Jost", sans-serif;
+  background-color: var(--background);
+}
+
+body, html {
+  overflow-x: hidden !important;
+}
+
+
+/* Flexbox for navbar and relevant positioning */
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+}
+
+/* styling for links in navbar */
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  padding: 1rem;
+  font-family: var(--main-font);
+}
+
+li a:link {
+  color: var(--white);
+}
+
+li a:hover {
+  color: var(--gold) !important;
+}
+
+li a:visited {
+  color: var(--white);
+}
+
+nav .logo {
+  color: var(--gold) !important;
+  font-family: var(--header-font);
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+nav .logo:hover {
+  color: #a19c17 !important;
+}
+
+/* styling for 3-bar menu for small screen sizes */
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  right: 1.6rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 0.3rem;
+}
+
+
+@media (max-width: 820px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  
+  nav .menu {
+    display: flex;
+    cursor: pointer;
+  } 
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--dark-navy);
+    width: 100% !important;
+  }
+
+  nav .logo {
+    padding-bottom: 1rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.2rem;
+  }
+
+  nav ul li a {
+    padding: 0.1rem;
+    text-align: center;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  #open {
+    display: none;
+  }
+
+
+}
+
+
+/* Landing Text Styling ----------------- */
+header {
+  text-align: center;
+  margin-top: 3.5rem;
+  color: var(--white);
+}
+
+
+header h3 {
+  font-size: 3rem;
+  font-family: var(--header-font);
+  font-weight: normal;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+header h4 {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.goldText {
+  color: var(--gold);
+}
+
+
+/* Videobox/TM Styling ---------- */
+.video-box {
+  display: flex;
+  width: 70rem;
+  justify-content: space-around;
+  margin: auto;
+  color: var(--white);
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+}
+
+.video-box button {
+  float: right;
+}
+
+.how-to {
+  padding-right: 2rem;
+}
+
+#startButton {
+  margin-top: 4.5rem;
+  height: 5rem;
+  width: 7rem;
+  font-family: var(--main-font);
+  font-weight: medium;
+  font-size: 1.8rem;
+  background-color: var(--gold);
+  color: var(--dark-navy);
+  border: 2px solid var(--white);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#startButton:hover {
+  background-color: #a19c17;
+}
+
+canvas {
+  border: 3px solid var(--white);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#results-container p {
+  width: 12rem;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  color: var(--white);
+  disply: inline;
+  text-align: center;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+}
+
+/* Background colors for results box */
+.GM {
+  background-color: #079c07;
+}
+
+.UH {
+  background-color: #b31919;
+}
+
+.IND {
+  background-color: #7a7b7f;
+}
+
+
+@media (max-width: 820px) {
+
+  .video-box {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 90%; 
+  }
+
+  
+}

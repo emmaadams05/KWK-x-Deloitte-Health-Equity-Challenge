@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="/figures/favicon.png" />
+  <title>Detect Air Quality</title>
+  <link href="src/tm.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Nav Links to create navbar -->
+    <a href="aware-air.replit.app" class="logo">AWARE AIR</a>
+    <div class="menu" id="menu" onclick="toggleNav()">
+      <!-- spans to make the small 3 bar menu -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="open" id="open">
+      <li><a href="/teachable_machine.html">Detect Air Quality with AI</a></li>
+      <!-- <li><a href="aware-air.replit.app/#stay-safe">Stay Safe</a></li>
+      <li><a href="aware-air.replit.app/#health-equity">Air & Health Equity</a></li> -->
+    </ul>
+
+  </nav>
+
+  <header class="tm-header">
+    <!-- Header for the page -->
+    <h3>Detect Your Air Quality with <span class="goldText">Teachable Machine AI</span></h3>
+  </header>
+
+  
+  <!-- Instructions on how to use teachable machine -->
+  <section class="video-box">
+
+    <div class="how-to">
+      <p><strong>How to Use:</strong></p>
+      <ol>
+        <li class="numbered">1. &nbsp; <span class="goldText">Allow</span> Camera Usage.</li>
+        <li class="numbered">2. &nbsp; Select the <span class="goldText">start</span> button and wait for camera to appear.</li>
+        <li class="numbered">3. &nbsp; Point camera into <span class="goldText">outdoor area</span>, preferably upwards <span class="goldText">towards the sky.</span></li>
+        <li class="numbered">4.  &nbsp; Look at results under the camera.</li>
+      </ol>
+    </div>
+
+    <!-- teachable machine code & button -->
+
+    <button type="button" id="startButton" onclick="init()">Start</button>
+
+    <div id="camera-section">
+      <div id="webcam-container"></div> <!-- Camera for testing data -->
+      <div id="label-container"></div> <!-- Show the predicted label -->
+
+      <div id="results-container"></div>
+
+    </div>
+
+  </section>
+
+  <!-- scripts required for teachable machine to work -->
+  <script src="tm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* CSS VARIABLE ------------- */
+html {
+  --white: #ffffff;
+  --background: #172036;
+  --gold: #E2D907;
+  --dark-navy: #0d1529;
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Jost", sans-serif;
+}
+
+
+/* CSS to Style the AI Redirect Portion of the Page */
+.redirect-container {
+  margin-top: 26rem;
+}
+
+.redirect-btn {
+  background-color: var(--gold);
+  display: block;
+  color: var(--background) !important;
+  width: 16.2rem;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-weight: bold !important;
+  letter-spacing: 0 !important;
+  float: center;
+  border: 4px solid var(--white);
+  border-radius: 8px;
+}
+
+.redirect-btn:hover {
+  background-color: #a9a40f;
+}

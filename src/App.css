@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* VARIABLES FOR COLOR AND FONT */
+html {
+  --white: #ffffff;
+  --background: #172036;
+  --gold: #E2D907;
+  --dark-navy: #0d1529;
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Jost", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+/* Landing page CSS code ----------------- */
+
+header {
+  text-align: center;
+  margin-top: 15rem;
+  color: var(--white);
+}
+
+header h1 {
+  font-size: 4rem;
+  font-family: var(--header-font);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+}
+
+header h4 {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.goldText {
+  color: var(--gold);
+}

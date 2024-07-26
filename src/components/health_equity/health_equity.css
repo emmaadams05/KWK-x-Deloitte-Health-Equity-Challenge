@@ -1,0 +1,44 @@
+/* CSS VARIABLE ------------- */
+html {
+  --white: #ffffff;
+  --background: #172036;
+  --gold: #E2D907;
+  --dark-navy: #0d1529;
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Jost", sans-serif;
+}
+
+/* CSS to Style the Health Equity Portion of the Page */
+.equity-title {
+  margin-top: 6rem !important;
+}
+
+.equity-container {
+  margin-top: 6rem
+}
+
+.equity-text p {
+  width: 45rem;
+  text-align: left;
+}
+
+.equity-text img {
+  width: 30rem;
+  border: 4px solid var(--gold);
+}
+
+.equity-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.source-link {
+  display: inline;
+  text-decoration: underline;
+  color: var(--gold);
+}
+
